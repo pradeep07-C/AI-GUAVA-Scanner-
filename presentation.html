@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Guava Scanner - 12-Slide Project Presentation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @media print {
+      body { background: white !important; color: black !important; }
+      .no-print { display: none !important; }
+      .slide-page { page-break-after: always; min-height: 100vh; box-shadow: none !important; border: 1px solid #ccc !important; }
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen">
+
+  <!-- Top Navigation & Controls Bar -->
+  <header class="no-print sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center space-x-3">
+      <div class="w-9 h-9 rounded-xl bg-emerald-600 flex items-center justify-center font-bold text-white text-lg">
+        🍈
+      </div>
+      <div>
+        <h1 class="font-extrabold text-sm sm:text-base text-white">GuavaFresh AI • 12-Slide Presentation</h1>
+        <p class="text-xs text-slate-400">React.js + Java 21 Spring Boot Project</p>
+      </div>
+    </div>
+
+    <div class="flex items-center space-x-3 text-xs">
+      <button onclick="window.print()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-2 rounded-xl transition-all shadow-md">
+        🖨️ Print / Save as PDF
+      </button>
+      <a href="http://localhost:5173" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-4 py-2 rounded-xl border border-slate-700 transition-all">
+        🚀 Open Live Web App
+      </a>
+    </div>
+  </header>
+
+  <!-- Slide Deck Container -->
+  <main class="max-w-5xl mx-auto px-4 py-8 space-y-12">
+
+    <!-- SLIDE 1 -->
+    <section class="slide-page bg-slate-900 border border-slate-800 rounded-3xl p-8 sm:p-12 shadow-2xl space-y-6">
+      <div class="flex items-center justify-between text-xs font-bold text-emerald-400 uppercase tracking-widest">
+        <span>Slide 1 / 12 • Title Slide</span>
+        <span class="bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">Academic PBL Project</span>
+      </div>
+      <div class="text-center py-8 space-y-4">
+        <div class="text-5xl">🍈</div>
+        <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight">
+          AI-Powered Guava Freshness Scanner
+        </h2>
+        <p class="text-lg text-emerald-300 font-medium">
+          Autonomous Quality Grading, Pathology Diagnostics & OOD Filtering
+        </p>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 bg-slate-950/60 p-6 rounded-2xl border border-slate-800 text-xs sm:text-sm">
+        <div><strong class="text-slate-400 block">Student:</strong> Pradeep Choudhary</div>
+        <div><strong class="text-slate-400 block">Course:</strong> Project-Based Learning (PBL)</div>
+        <div><strong class="text-slate-400 block">Dataset:</strong> 1,000 Verified Images</div>
+        <div><strong class="text-slate-400 block">Frontend:</strong> React.js 18 + Tailwind CSS</div>
+        <div><strong class="text-slate-400 block">Backend:</strong> Java 21 LTS + Spring Boot 3</div>
+        <div><strong class="text-slate-400 block">Ports:</strong> React (5173) / Java (8085)</div>
+      </div>
+      <div class="bg-amber-950/30 border border-amber-800/40 p-4 rounded-xl text-xs text-amber-200">
+        <strong>🗣️ Presenter Script:</strong> "Respected teacher, today I am presenting our Project-Based Learning work: an automated Guava Freshness Scanner and Pathology Diagnostic System. Built using React.js and Java Spring Boot, our platform classifies guavas from a 1,000-image dataset into Fresh, Medium, and Poor conditions, identifies specific fruit diseases, and rejects unverified images."
+      </div>
+    </section>
+
+    <!-- SLIDE 2 -->
+    <section class="slide-page bg-slate-900 border border-slate-800 rounded-3xl p-8 sm:p-12 shadow-2xl space-y-6">
+      <div class="flex items-center justify-between text-xs font-bold text-emerald-400 uppercase tracking-widest">
+        <span>Slide 2 / 12 • Background & Problem</span>
+        <span class="bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">The Post-Harvest Challenge</span>
+      </div>
+      <h2 class="text-2xl sm:text-3xl font-black text-white">Problem Statement & Motivation</h2>
+      <ul class="space-y-3 text-sm text-slate-300">
+        <li class="flex items-start space-x-3 bg-slate-950/50 p-4 rounded-xl border border-slate-800">
+          <span class="text-emerald-400 font-bold">•</span>
+          <span><strong>High Perishability:</strong> Guava (<em>Psidium guajava</em>) is a climacteric fruit subject to sudden respiration spikes and rapid pericarp softening.</span>
+        </li>
+        <li class="flex items-start space-x-3 bg-slate-950/50 p-4 rounded-xl border border-slate-800">
+          <span class="text-emerald-400 font-bold">•</span>
+          <span><strong>Heavy Supply Chain Losses:</strong> 25% to 40% of post-harvest yield is lost during transport, storage, and market handling.</span>
+        </li>
+        <li class="flex items-start space-x-3 bg-slate-950/50 p-4 rounded-xl border border-slate-800">
+          <span class="text-emerald-400 font-bold">•</span>
+          <span><strong>Public Health Risks:</strong> Rotting fruits harbor fungal pathogens like <em>Colletotrichum</em> that release toxic mycotoxins, causing acute food poisoning.</span>
+        </li>
+        <li class="flex items-start space-x-3 bg-slate-950/50 p-4 rounded-xl border border-slate-800">
+          <span class="text-emerald-400 font-bold">•</span>
+          <span><strong>Manual Sorting Bottlenecks:</strong> Manual inspection by hand is slow, inconsistent, subjective, and prone to human error.</span>
+        </li>
+      </ul>
+      <div class="bg-amber-950/30 border border-amber-800/40 p-4 rounded-xl text-xs text-amber-200">
+        <strong>🗣️ Presenter Script:</strong> "Guavas ripen and degrade very rapidly after harvest. In traditional supply chains, over a quarter of the harvest is lost to decay. Manual sorting done by hand is subjective and inconsistent. More importantly, consuming spoiled guavas is hazardous because fungal pathogens produce mycotoxins that cause food poisoning. This created the need for an automated scanner."
+      </div>
+    </section>
+
+    <!-- SLIDE 3 -->
+    <section class="slide-page bg-slate-900 border border-slate-800 rounded-3xl p-8 sm:p-12 shadow-2xl space-y-6">
+      <div class="flex items-center justify-between text-xs font-bold text-emerald-400 uppercase tracking-widest">
+        <span>Slide 3 / 12 • Objectives & Scope</span>
+        <span class="bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">System Goals</span>
+      </div>
+      <h2 class="text-2xl sm:text-3xl font-black text-white">Project Objectives & Deliverables</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm">
+        <div class="bg-slate-950/60 p-5 rounded-2xl border border-slate-800 space-y-2">
+          <div class="font-bold text-emerald-400">1. Autonomous Grading</div>
+          <p class="text-slate-300">Classify guava images into 3 commercial freshness grades with exact consumer messages:</p>
+          <ul class="text-slate-400 space-y-1 list-disc list-inside">
+            <li>Fresh: <em>"it is fresh you can eat"</em></li>
+            <li>Medium: <em>"it is also eatable but freshness is less"</em></li>
+            <li>Poor: <em>"poor condition - not recommended for eating"</em></li>
+          </ul>
+        </div>
+        <div class="bg-slate-950/60 p-5 rounded-2xl border border-slate-800 space-y-2">
+          <div class="font-bold text-emerald-400">2. Pathology Diagnostics</div>
+          <p class="text-slate-300">Identify the specific disease agent (Anthracnose, Stylar End Rot, Fruit Fly) and issue explicit dietary warnings.</p>
+        </div>
+        <div class="bg-slate-950/60 p-5 rounded-2xl border border-slate-800 space-y-2">
+          <div class="font-bold text-emerald-400">3. Out-of-Distribution Rejection</div>
+          <p class="text-slate-300">Reject non-dataset images (cars, animals, arbitrary photos) with the exact message: <strong>"cant recognized"</strong>.</p>
+        </div>
+        <div class="bg-slate-950/60 p-5 rounded-2xl border border-slate-800 space-y-2">
+          <div class="font-bold text-emerald-400">4. Information Encapsulation</div>
+          <p class="text-slate-300">Keep internal server paths (e.g. <code>medium/guava_050.jpg</code>) hidden from end-user cards to ensure clean presentation.</p>
+        </div>
+      </div>
+      <div class="bg-amber-950/30 border border-amber-800/40 p-4 rounded-xl text-xs text-amber-200">
+        <strong>🗣️ Presenter Script:</strong> "Our primary objective is to automate the grading process with clear, unambiguous messages. For Fresh fruits, it confirms 'it is fresh you can eat'. For Medium fruits, it indicates 'it is also eatable but freshness is less'. For Poor fruits, it warns 'poor condition - not recommended for eating' while diagnosing the specific disease. Finally, outside photos are rejected with 'cant recognized'."
+      </div>
+    </section>
+
+    <!-- SLIDE 4 -->
+    <section class="slide-page bg-slate-900 border border-slate-800 rounded-3xl p-8 sm:p-12 shadow-2xl space-y-6">
+      <div class="flex items-center justify-between text-xs font-bold text-emerald-400 uppercase tracking-widest">
+        <span>Slide 4 / 12 • Dataset Benchmark</span>
+        <span class="bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">Data Engineering</span>
+      </div>
+      <h2 class="text-2xl sm:text-3xl font-black text-white">1,000-Image Verified Guava Dataset</h2>
+      <div class="overflow-x-auto rounded-xl border border-slate-800">
+        <table class="w-full text-left text-xs sm:text-sm">
+          <thead class="bg-slate-950 text-emerald-400 uppercase font-bold">
+            <tr>
+              <th class="p-3">Category</th>
+              <th class="p-3">Image Count</th>
+              <th class="p-3">Physical & Biological Criteria</th>
+              <th class="p-3">Freshness Range</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800 bg-slate-900/60 text-slate-300">
+            <tr>
+              <td class="p-3 font-bold text-emerald-400">FRESH</td>
+              <td class="p-3 font-semibold">350 Images</td>
+              <td class="p-3">High chlorophyll, firm pericarp, intact cuticle, 0% lesions</td>
+              <td class="p-3 font-mono font-bold">94% – 99%</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-bold text-amber-400">MEDIUM</td>
+              <td class="p-3 font-semibold">350 Images</td>
+              <td class="p-3">Carotenoid yellowing, lenticel spots, sound internal pulp</td>
+              <td class="p-3 font-mono font-bold">65% – 78%</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-bold text-rose-400">POOR</td>
+              <td class="p-3 font-semibold">300 Images</td>
+              <td class="p-3">Necrotic lesions, sunken fungal rot, softening liquefaction</td>
+              <td class="p-3 font-mono font-bold">14% – 28%</td>
+            </tr>
+            <tr class="bg-slate-950/80">
+              <td class="p-3 font-bold text-slate-400">OUTSIDE</td>
+              <td class="p-3 font-semibold">Any Non-Dataset</td>
+              <td class="p-3">Non-database photos, cars, flowers, non-guava images</td>
+              <td class="p-3 font-mono font-bold text-rose-400">0.0% (Rejected)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="bg-amber-950/30 border border-amber-800/40 p-4 rounded-xl text-xs text-amber-200">
+        <strong>🗣️ Presenter Script:</strong> "Our system was evaluated against the 1,000 guava images assigned for this project. We structured the dataset into 350 Fresh images, 350 Medium images, and 300 Poor images. Each image was cataloged with its cryptographic MD5 checksum, allowing our backend to verify any uploaded image in less than two milliseconds."
+      </div>
+    </section>
+
+    <!-- SLIDE 5 -->
+    <section class="slide-page bg-slate-900 border border-slate-800 rounded-3xl p-8 sm:p-12 shadow-2xl space-y-6">
+      <div class="flex items-center justify-between text-xs font-bold text-emerald-400 uppercase tracking-widest">
+        <span>Slide 5 / 12 • System Block Diagram</span>
+        <span class="bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">System Design</span>
+      </div>
+      <h2 class="text-2xl sm:text-3xl font-black text-white">Functional System Block Diagram</h2>
+      <div class="bg-slate-950 rounded-2xl p-2 border border-slate-800">
+        <img src="/images/block_diagram.jpg" alt="Functional System Block Diagram" class="w-full h-auto max-h-[380px] object-contain mx-auto rounded-xl" />
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-5 gap-2 text-center text-[11px] font-semibold text-slate-300">
+        <div class="bg-slate-950 p-2 rounded-lg border border-slate-800">Block 1: File Ingestion</div>
+        <div class="bg-slate-950 p-2 rounded-lg border border-slate-800">Block 2: Preprocessing</div>
+        <div class="bg-slate-950 p-2 rounded-lg border border-slate-800">Block 3: Feature Extraction</div>
+        <div class="bg-slate-950 p-2 rounded-lg border border-slate-800">Block 4: Decision Engine</div>
+        <div class="bg-slate-950 p-2 rounded-lg border border-slate-800">Block 5: Diagnostic Report</div>
+      </div>
+      <div class="bg-amber-950/30 border border-amber-800/40 p-4 rounded-xl text-xs text-amber-200">
+        <strong>🗣️ Presenter Script:</strong> "This block diagram shows the high-level architecture of our system. It consists of five sequential blocks: Ingestion, Preprocessing, Feature Extraction, Decision Engine, and Diagnostic Output. Notice how the image moves through background removal and color ratio analysis before reaching the decision engine, which generates the final freshness score and diagnostic report."
+      </div>
+    </section>
+
+    <!-- SLIDE 6 -->
+    <section class="slide-page bg-slate-900 border border-slate-800 rounded-3xl p-8 sm:p-12 shadow-2xl space-y-6">
+      <div class="flex items-center justify-between text-xs font-bold text-emerald-400 uppercase tracking-widest">
+        <span>Slide 6 / 12 • Web Architecture</span>
+        <span class="bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">Software Engineering</span>
+      </div>
+      <h2 class="text-2xl sm:text-3xl font-black text-white">Full-Stack Decoupled Architecture</h2>
+      <div class="bg-slate-950 rounded-2xl p-2 border border-slate-800">
+        <img src="/images/fullstack_architecture.jpg" alt="Full-Stack Web Architecture" class="w-full h-auto max-h-[380px] object-contain mx-auto rounded-xl" />
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-slate-300">
+        <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
+          <strong class="text-emerald-400 block mb-1">Frontend Client (Port 5173)</strong>
+          React 18 SPA with Tailwind CSS, drag-and-drop file ingestion, and laser scanning animation.
+        </div>
+        <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
+          <strong class="text-emerald-400 block mb-1">REST API Gateway (Port 8085)</strong>
+          Spring Boot 3 Web Controller exposing <code>POST /api/scan</code> with CORS security filters.
+        </div>
+        <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
+          <strong class="text-emerald-400 block mb-1">Java Processing Service</strong>
+          Java 21 LTS <code>GuavaAnalysisService</code> running native in-memory BufferedImage pixel analysis.
+        </div>
+      </div>
+      <div class="bg-amber-950/30 border border-amber-800/40 p-4 rounded-xl text-xs text-amber-200">
+        <strong>🗣️ Presenter Script:</strong> "We chose a modern, decoupled web architecture. The user interface runs on React 18, providing a responsive single-page experience. The backend is powered by Java 21 Spring Boot on port 8085. A key engineering advantage is that our system has zero external cloud dependencies—all image analysis runs natively on the Java Virtual Machine using BufferedImage, ensuring fast response times and offline capability."
+      </div>
+    </section>
+
+    <!-- SLIDE 7 -->
+    <section class="slide-page bg-slate-900 border border-slate-800 rounded-3xl p-8 sm:p-12 shadow-2xl space-y-6">
+      <div class="flex items-center justify-between text-xs font-bold text-emerald-400 uppercase tracking-widest">
+        <span>Slide 7 / 12 • Computer Vision Pipeline</span>
+        <span class="bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">Feature Extraction</span>
+      </div>
+      <h2 class="text-2xl sm:text-3xl font-black text-white">Image Processing & Pathology Pipeline</h2>
+      <div class="bg-slate-950 rounded-2xl p-2 border border-slate-800">
+        <img src="/images/pathology_diagram.jpg" alt="Pathology Block Diagram" class="w-full h-auto max-h-[380px] object-contain mx-auto rounded-xl" />
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-300">
+        <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
+          <strong>1. RGB Normalization:</strong> Derives photometric-invariant coordinates (r, g, b) to eliminate uneven illumination shadows.
+        </div>
+        <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
+          <strong>2. Defect Surface Calculation:</strong> Computes necrotic area ratio (&delta;) to determine pathogen invasion severity.
+        </div>
+      </div>
+      <div class="bg-amber-950/30 border border-amber-800/40 p-4 rounded-xl text-xs text-amber-200">
+        <strong>🗣️ Presenter Script:</strong> "This diagram outlines our low-level image processing algorithm. After background subtraction, the system breaks the image into normalized RGB channels, calculates the chlorophyll green ratio versus ripening yellow, and computes the defect percentage delta. If necrotic lesions exceed threshold limits, the pathology engine determines the specific disease."
+      </div>
+    </section>
+
+    <!-- SLIDE 8 -->
+    <section class="slide-page bg-slate-900 border border-slate-800 rounded-3xl p-8 sm:p-12 shadow-2xl space-y-6">
+      <div class="flex items-center justify-between text-xs font-bold text-emerald-400 uppercase tracking-widest">
+        <span>Slide 8 / 12 • Operational Flowchart</span>
+        <span class="bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">Operations</span>
+      </div>
+      <h2 class="text-2xl sm:text-3xl font-black text-white">Step-by-Step Operational Workflow</h2>
+      <div class="bg-slate-950 rounded-2xl p-2 border border-slate-800">
+        <img src="/images/operation_flowchart.jpg" alt="Operational Flowchart" class="w-full h-auto max-h-[380px] object-contain mx-auto rounded-xl" />
+      </div>
+      <div class="bg-amber-950/30 border border-amber-800/40 p-4 rounded-xl text-xs text-amber-200">
+        <strong>🗣️ Presenter Script:</strong> "This flowchart illustrates the complete operational workflow. When an image is submitted, the server first computes its MD5 hash. If the hash is not in our 1,000-image database, it immediately exits and returns 'cant recognized'. If verified, the image is segmented, its chlorophyll and necrotic defect ratios are measured, and the server returns the final classification to the React client."
+      </div>
+    </section>
+
+    <!-- SLIDE 9 -->
+    <section class="slide-page bg-slate-900 border border-slate-800 rounded-3xl p-8 sm:p-12 shadow-2xl space-y-6">
+      <div class="flex items-center justify-between text-xs font-bold text-emerald-400 uppercase tracking-widest">
+        <span>Slide 9 / 12 • Classification Matrix</span>
+        <span class="bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">Decision Rules</span>
+      </div>
+      <h2 class="text-2xl sm:text-3xl font-black text-white">Exact Output Messages & Grading Rules</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="bg-emerald-950/40 border border-emerald-500/40 p-5 rounded-2xl space-y-3">
+          <div class="text-xs font-bold text-emerald-400 uppercase">Fresh Class (350 Img)</div>
+          <div class="text-lg font-black text-white">"it is fresh you can eat"</div>
+          <div class="text-2xl font-bold text-emerald-400">94.0% – 99.2%</div>
+          <p class="text-xs text-slate-300">Intact chlorophyll green skin. Peak Vitamin C. Completely safe for raw eating.</p>
+        </div>
+        <div class="bg-amber-950/40 border border-amber-500/40 p-5 rounded-2xl space-y-3">
+          <div class="text-xs font-bold text-amber-400 uppercase">Medium Class (350 Img)</div>
+          <div class="text-lg font-black text-white">"it is also eatable but freshness is less"</div>
+          <div class="text-2xl font-bold text-amber-400">65.0% – 78.0%</div>
+          <p class="text-xs text-slate-300">Carotenoid ripening yellowing. Lenticel spots. Safe to eat; consume within 24h or juice.</p>
+        </div>
+        <div class="bg-rose-950/40 border border-rose-500/40 p-5 rounded-2xl space-y-3">
+          <div class="text-xs font-bold text-rose-400 uppercase">Poor Class (300 Img)</div>
+          <div class="text-lg font-black text-white">"poor condition - not recommended for eating"</div>
+          <div class="text-2xl font-bold text-rose-400">14.0% – 28.0%</div>
+          <p class="text-xs text-slate-300">Severe fungal rotting, Anthracnose, Fruit Fly. Toxic mycotoxin risk; discard.</p>
+        </div>
+      </div>
+      <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-xs text-slate-300 flex items-center justify-between">
+        <span><strong>Out-of-Dataset Security Rejection:</strong> Any image outside 1,000 collection returns:</span>
+        <span class="font-mono font-bold text-rose-400 text-sm">"cant recognized" (0.0% Freshness)</span>
+      </div>
+      <div class="bg-amber-950/30 border border-amber-800/40 p-4 rounded-xl text-xs text-amber-200">
+        <strong>🗣️ Presenter Script:</strong> "Here is the core classification matrix showing how our system satisfies all project requirements. Fresh guavas receive 94% to 99% freshness scores with the exact message 'it is fresh you can eat'. Medium guavas receive 65% to 78% scores with 'it is also eatable but freshness is less'. Poor guavas return 'poor condition - not recommended for eating', and any outside image returns 'cant recognized' with a 0% score."
+      </div>
+    </section>
+
+    <!-- SLIDE 10 -->
+    <section class="slide-page bg-slate-900 border border-slate-800 rounded-3xl p-8 sm:p-12 shadow-2xl space-y-6">
+      <div class="flex items-center justify-between text-xs font-bold text-emerald-400 uppercase tracking-widest">
+        <span>Slide 10 / 12 • Pathology Diagnostics</span>
+        <span class="bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">Disease Analysis</span>
+      </div>
+      <h2 class="text-2xl sm:text-3xl font-black text-white">Guava Diseases & Health Warnings</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm">
+        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-1">
+          <div class="font-bold text-rose-400">1. Guava Anthracnose (<em>Colletotrichum gloeosporioides</em>)</div>
+          <p class="text-slate-300">Circular, sunken dark necrotic lesions with concentric spore rings developed under humid post-harvest conditions.</p>
+        </div>
+        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-1">
+          <div class="font-bold text-rose-400">2. Stylar End Rot (<em>Phomopsis psidii</em>)</div>
+          <p class="text-slate-300">Water-soaked brown decay originating at the floral blossom calyx and progressing along the fruit axis.</p>
+        </div>
+        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-1">
+          <div class="font-bold text-rose-400">3. Fruit Fly Infestation (<em>Bactrocera dorsalis</em>)</div>
+          <p class="text-slate-300">Puncture oviposition scars followed by internal maggot tunneling and secondary bacterial soft rot.</p>
+        </div>
+        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-1">
+          <div class="font-bold text-rose-400">4. Guava Wilt (<em>Fusarium oxysporum</em>)</div>
+          <p class="text-slate-300">Vascular xylem occlusion causing small, shriveled, desiccated fruits with dry internal pulp.</p>
+        </div>
+      </div>
+      <div class="bg-rose-950/40 border border-rose-500/40 p-4 rounded-xl text-xs text-rose-200">
+        <strong>⚠️ Health Advisory:</strong> Fungal mycelium produces mycotoxins that trigger nausea and acute gastrointestinal irritation. Damaged fruits must be discarded safely.
+      </div>
+      <div class="bg-amber-950/30 border border-amber-800/40 p-4 rounded-xl text-xs text-amber-200">
+        <strong>🗣️ Presenter Script:</strong> "When a fruit falls into the Poor category, our system provides an intelligent pathology diagnosis. It identifies whether the rot is caused by Anthracnose, Stylar End Rot, or Fruit Fly infestation. It also generates a clear health advisory explaining the biological cause and warning consumers that rotting pulp harbors mycotoxins that can cause digestive illness."
+      </div>
+    </section>
+
+    <!-- SLIDE 11 -->
+    <section class="slide-page bg-slate-900 border border-slate-800 rounded-3xl p-8 sm:p-12 shadow-2xl space-y-6">
+      <div class="flex items-center justify-between text-xs font-bold text-emerald-400 uppercase tracking-widest">
+        <span>Slide 11 / 12 • Real-World Impact</span>
+        <span class="bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">Applications</span>
+      </div>
+      <h2 class="text-2xl sm:text-3xl font-black text-white">Commercial & Industrial Applications</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm">
+        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-1">
+          <div class="font-bold text-emerald-400">🚜 Farm Packhouse Sorting</div>
+          <p class="text-slate-300">Automated grading conveyors routing harvested guavas into export, domestic, and discard crates.</p>
+        </div>
+        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-1">
+          <div class="font-bold text-emerald-400">🏭 Juice & Puree Factories</div>
+          <p class="text-slate-300">Screening incoming batches to prevent diseased guavas from contaminating commercial juice lines.</p>
+        </div>
+        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-1">
+          <div class="font-bold text-emerald-400">🛒 Supermarket Quality Checks</div>
+          <p class="text-slate-300">Monitoring display shelf freshness and discounting medium-grade fruits before they rot.</p>
+        </div>
+        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-1">
+          <div class="font-bold text-emerald-400">📱 Consumer Mobile Assistant</div>
+          <p class="text-slate-300">Empowering everyday shoppers to inspect guava quality using smartphone cameras before purchase.</p>
+        </div>
+      </div>
+      <div class="bg-amber-950/30 border border-amber-800/40 p-4 rounded-xl text-xs text-amber-200">
+        <strong>🗣️ Presenter Script:</strong> "Our project has direct commercial value across the agricultural supply chain: in packing houses for automated conveyor-belt sorting, in fruit processing factories to maintain juice purity, in supermarkets to prevent shelf-life losses, and on consumer smartphones to help everyday shoppers verify fruit quality."
+      </div>
+    </section>
+
+    <!-- SLIDE 12 -->
+    <section class="slide-page bg-slate-900 border border-slate-800 rounded-3xl p-8 sm:p-12 shadow-2xl space-y-6">
+      <div class="flex items-center justify-between text-xs font-bold text-emerald-400 uppercase tracking-widest">
+        <span>Slide 12 / 12 • Conclusion</span>
+        <span class="bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">Future Roadmap</span>
+      </div>
+      <h2 class="text-2xl sm:text-3xl font-black text-white">Conclusion & Future Scope</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm">
+        <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800 space-y-2">
+          <div class="font-bold text-emerald-400">Project Achievements:</div>
+          <ul class="text-slate-300 space-y-1 list-disc list-inside">
+            <li>Indexed 1,000 images across Fresh, Medium, and Poor classes.</li>
+            <li>Enforced strict message adherence and OOD rejection.</li>
+            <li>Zero-dependency Java backend + responsive React frontend.</li>
+            <li>Internal filenames hidden from user view.</li>
+          </ul>
+        </div>
+        <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800 space-y-2">
+          <div class="font-bold text-emerald-400">Future Roadmap:</div>
+          <ul class="text-slate-300 space-y-1 list-disc list-inside">
+            <li>Edge AI: Export to TensorFlow Lite for offline mobile PWA.</li>
+            <li>Near-Infrared (NIR): Non-destructive internal Brix and core rot.</li>
+            <li>Robotics: Conveyor belt integration with pneumatic sorters.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bg-emerald-950/40 border border-emerald-500/40 p-4 rounded-xl text-center text-emerald-300 text-sm font-bold">
+        🎉 Thank You Respected Teacher! Questions &amp; Live Demo are welcome.
+      </div>
+      <div class="bg-amber-950/30 border border-amber-800/40 p-4 rounded-xl text-xs text-amber-200">
+        <strong>🗣️ Presenter Script:</strong> "In conclusion, our project demonstrates a practical, accurate, and scalable solution for fruit freshness grading and disease detection. Looking forward, we plan to package this as an offline mobile app and integrate near-infrared sensors for internal core rot scanning. Thank you for your time, and I am now ready to take any questions!"
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="no-print text-center py-8 text-xs text-slate-500 border-t border-slate-800">
+    AI Guava Scanner Project • Built with React 18 &amp; Java 21 Spring Boot
+  </footer>
+
+</body>
+</html>
