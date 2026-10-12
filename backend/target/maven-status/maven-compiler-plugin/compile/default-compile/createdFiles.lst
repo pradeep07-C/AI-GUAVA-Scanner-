@@ -1,0 +1,7 @@
+com/guavascanner/service/GuavaAnalysisService.class
+com/guavascanner/controller/GuavaScanController.class
+com/guavascanner/model/DatasetEntry.class
+com/guavascanner/GuavaScannerApplication.class
+com/guavascanner/model/ScanResult.class
+com/guavascanner/config/WebCorsConfig.class
+com/guavascanner/model/DiseaseInfo.class

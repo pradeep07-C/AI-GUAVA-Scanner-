@@ -1,0 +1,35 @@
+#!/bin/sh
+# Maven Wrapper Script
+# Downloads and runs Maven automatically
+
+set -e
+
+MAVEN_WRAPPER_PROPERTIES=".mvn/wrapper/maven-wrapper.properties"
+
+if [ -f "$MAVEN_WRAPPER_PROPERTIES" ]; then
+    DIST_URL=$(grep "distributionUrl" "$MAVEN_WRAPPER_PROPERTIES" | cut -d'=' -f2-)
+fi
+
+MAVEN_HOME="$HOME/.m2/wrapper/dists/apache-maven-3.9.9"
+MAVEN_CMD="$MAVEN_HOME/bin/mvn"
+
+if [ ! -f "$MAVEN_CMD" ]; then
+    echo "Downloading Maven 3.9.9..."
+    mkdir -p "$MAVEN_HOME"
+    
+    if command -v curl > /dev/null 2>&1; then
+        curl -fsSL "$DIST_URL" -o "/tmp/maven.zip"
+    elif command -v wget > /dev/null 2>&1; then
+        wget -q "$DIST_URL" -O "/tmp/maven.zip"
+    else
+        echo "Error: Neither curl nor wget found. Please install Maven manually."
+        exit 1
+    fi
+    
+    unzip -qo "/tmp/maven.zip" -d "$HOME/.m2/wrapper/dists/"
+    rm -f "/tmp/maven.zip"
+    chmod +x "$MAVEN_CMD"
+    echo "Maven 3.9.9 installed successfully!"
+fi
+
+exec "$MAVEN_CMD" "$@"
